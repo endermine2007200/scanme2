@@ -35,4 +35,4 @@ app.get('*', (req, res, next) => {
 	next();
 });
 
-module.exports = app
+app.listen(3000)
