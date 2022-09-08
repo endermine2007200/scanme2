@@ -1,5 +1,4 @@
 const express = require('express')
-const sesrverless = require('serverless-http')
 const body = require('body-parser')
 const e = require('../main')
 const app = express()
@@ -37,4 +36,3 @@ app.get('*', (req, res, next) => {
 });
 
 module.exports = app
-module.exports.handler = sesrverless(app)
